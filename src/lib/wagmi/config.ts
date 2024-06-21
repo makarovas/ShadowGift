@@ -5,8 +5,7 @@ import { defaultWagmiConfig } from '@web3modal/wagmi/react/config';
 import { cookieStorage, createStorage, http } from 'wagmi';
 import { blastSepolia, bscTestnet, sepolia } from 'wagmi/chains';
 
-export const projectId =
-  process.env?.NEXT_PUBLIC_PROJECT_ID || 'ce25aa4d069b07f990e26ff465a51ad4';
+export const projectId = process.env?.NEXT_PUBLIC_PROJECT_ID || '';
 
 if (!projectId) throw new Error('Project ID is not defined');
 
