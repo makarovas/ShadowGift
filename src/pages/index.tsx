@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google';
 import Head from 'next/head';
-import Link from 'next/link';
+// import Link from 'next/link';
+import { Link } from '@chakra-ui/next-js';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,10 +17,16 @@ export default function Home() {
       <main>
         <ul>
           <li>
-            <Link href='/'>Home</Link>
+            {/* <Link href='/'>Home</Link> */}
+            <Link href='/' color='blue.400' _hover={{ color: 'blue.500' }}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link href='/about'>About Us1</Link>
+            {/* <Link href='/about'>About Us1</Link> */}
+            <Link href='/about' color='blue.400' _hover={{ color: 'blue.500' }}>
+              About Us
+            </Link>
           </li>
         </ul>
       </main>
